@@ -1,0 +1,10 @@
+/* index.css
+ * Minimal stylesheet placeholder to avoid 404s when referenced from index.html.
+ * The project uses the Tailwind CDN via index.html, so additional styles are optional.
+ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add any global overrides below */
