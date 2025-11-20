@@ -103,7 +103,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 text-center">
             {[
-               { label: 'Years Experience', value: '4+' },
+               { label: 'Years of Experience', value: '4+' },
                { label: 'Client Engagements', value: '4' },
                { label: 'Regression Pass Rate', value: '95%' },
             ].map((stat) => (
