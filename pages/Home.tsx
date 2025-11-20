@@ -103,9 +103,9 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 text-center">
             {[
-              { label: 'Years Experience', value: '4.5+' },
-              { label: 'Projects Delivered', value: '4' },
-              { label: 'Stability Increase', value: '25%' },
+               { label: 'Years Experience', value: '4+' },
+               { label: 'Client Engagements', value: '4' },
+               { label: 'Regression Pass Rate', value: '95%' },
             ].map((stat) => (
               <div key={stat.label} className="px-4 py-6 bg-slate-50 rounded-xl shadow-sm border border-slate-100">
                 <dt className="text-base font-medium text-slate-500">{stat.label}</dt>

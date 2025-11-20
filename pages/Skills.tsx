@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SKILL_CATEGORIES } from '../constants';
-import { Monitor, Cpu, Terminal, Database, Layout, Cloud, Bot, ClipboardCheck, LucideIcon } from 'lucide-react';
+import { Monitor, Cpu, Terminal, Database, Layout, Cloud, Bot, ClipboardCheck, LucideIcon, ArrowRight} from 'lucide-react';
 
 const iconMap: Record<string, LucideIcon> = {
   Monitor,
@@ -58,6 +59,16 @@ const Skills: React.FC = () => {
               </div>
             );
           })}
+        </div>
+         {/* Navigation to Certifications */}
+        <div className="mt-16 flex justify-center">
+          <Link
+            to="/certifications"
+            className="group inline-flex items-center px-8 py-4 text-base font-medium rounded-full text-white bg-primary-600 hover:bg-primary-700 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
+          >
+            View Certifications & Education
+            <ArrowRight className="ml-2 -mr-1 h-5 w-5 transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
       </div>
     </div>
