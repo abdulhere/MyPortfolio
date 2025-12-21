@@ -33,10 +33,6 @@ npm run build
 npm run preview
 ```
 
-## Environment
-- Set any env keys in `.env.local` if needed.
-- `GEMINI_API_KEY` is referenced in `vite.config.ts` and mapped to `process.env.GEMINI_API_KEY` — add it to `.env.local` if your setup requires it.
-
 ## Important files / structure
 - `index.tsx` — app entry, mounts React tree.
 - `App.tsx` — router + main layout (imports `Navbar`, `Footer`, and `pages/*`).
@@ -69,8 +65,7 @@ npm run preview
 - Do not change `vite.config.ts` alias or env defines without checking other code that depends on them.
 - Keep type definitions in `types.ts` stable; many components depend on them.
 
-## License
-Add your preferred license or leave as-is.
+
 
 ---
 
