@@ -12,7 +12,7 @@ export const CONTACT_INFO = {
   phone: "7708181026",
   location: "Bengaluru, Karnataka",
   visa: "H1B Visa Holder (Valid until Sep 2027)",
-  summary: "With more than four and a half years of expertise in both automation and manual testing on mobile, web, and API platforms, I am a meticulous quality assurance engineer, adept at using Pytest-BDD, Appium, and Selenium to create reliable frameworks. Proven track record of reducing redundancy by 35% and enhancing API stability by 25% for Fortune 500 clients in Banking, Insurance, and Hospitality."
+  summary: "With more 5 years of expertise in both automation and manual testing on mobile, web, and API platforms, I am a meticulous quality assurance engineer, adept at using Pytest-BDD, Appium, and Selenium to create reliable frameworks. Proven track record of reducing redundancy by 35% and enhancing API stability by 25% for Fortune 500 clients in Banking, Insurance, and Hospitality."
 };
 
 export const WORK_HISTORY_SUMMARY = [
