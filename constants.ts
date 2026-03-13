@@ -1,4 +1,4 @@
-import { Project, SkillCategory, Certification, Education } from './types';
+import { Project, SkillCategory, Certification, Education, MyAward } from './types';
 import { Monitor, Cpu, Terminal, Database, Layout, Cloud, Award, BookOpen, Bot, ClipboardCheck } from 'lucide-react';
 
 // BEST PRACTICE: Use an asset in `public/` so Vite includes it in builds.
@@ -36,7 +36,7 @@ export const WORK_HISTORY_SUMMARY = [
 
 export const IBM_TIMELINE = [
   {
-    role: "Full Stack Tester",
+    role: "Quality Engineer - Full-stack",
     period: "2022 - Present",
     description: "Promoted after completing rigorous 6-month Full Stack Testing training. Currently deployed on high-impact projects across Banking & Hospitality."
   },
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
   {
     client: "PNC Bank",
     name: "PNC Mobile Banking App",
-    role: "Test Automation Lead",
+    role: "Quality Engineer",
     period: "07/2023 - Present",
     startYear: 2023,
     endYear: 'Present',
@@ -64,10 +64,12 @@ export const PROJECTS: Project[] = [
       "Led test automation for the 'Paze' digital wallet, integrating Pytest-BDD with Sauce Labs.",
       "Developed custom reporting features and optimized the framework with YAML-based locators.",
       "Implemented data-driven testing using Excel, increasing reusability and reducing redundancy by 35%.",
+      "Integrated API-driven authentication into PyTest BDD Appium framework using Python requests, including certificate-based auth, multi-step token chaining, session cookie handling, and dynamic UI flow control based on backend state.",
       "Owned API testing using Postman and conducted Accessibility Testing (WCAG compliance).",
+      "Implemented Service Virtualization using the Hijack tool to mock API endpoints, enabling comprehensive negative testing and ensuring testing continuity during downstream service outages or environmental instability.",
       "Drafted test strategy documents and presented weekly status reports to stakeholders."
     ],
-    technologies: ["Pytest-BDD", "Sauce Labs", "Python", "Postman", "Accessibility Testing"]
+    technologies: ["Pytest-BDD", "Sauce Labs", "Python", "Postman", "Accessibility Testing", "Service Virtualization", "Android/iOS App Testing"]
   },
   {
     client: "AMADEUS",
@@ -86,7 +88,7 @@ export const PROJECTS: Project[] = [
   {
     client: "METLIFE",
     name: "Pet Mobile App",
-    role: "Lead QE",
+    role: "Quality Engineer",
     period: "05/2021 - 07/2022",
     startYear: 2021,
     endYear: 2022,
@@ -132,7 +134,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     name: "API & Performance",
     icon: "Monitor",
-    skills: ["Postman", "SoapUI", "JMeter"]
+    skills: ["Postman", "SoapUI", "JMeter", "Service Virtualization (Hijack)"]
   },
   {
     name: "Frameworks",
@@ -142,7 +144,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     name: "CI/CD & Cloud",
     icon: "Cloud",
-    skills: ["Maven", "Git", "Bitbucket", "Bamboo", "Azure DevOps"]
+    skills: ["Maven", "Git", "Bitbucket", "Bamboo", "Azure DevOps", "AWS"]
   },
   {
     name: "Mobile & Management",
@@ -175,6 +177,11 @@ export const CERTIFICATIONS: Certification[] = [
   { name: "SAFe 5 Practitioner – Scaled Agile" },
   { name: "Full Stack Testing – IIHT Ltd." },
   { name: "Business English Certificate (BEC) Preliminary – Cambridge University" }
+];
+
+export const MYAWARDS: MyAward[] = [
+  { name: "IBM’s Gen AI Techathon 4.0 (2025) Winner" },
+  { name: "Certificate of Recognition by IBM Client partners – 2025" }
 ];
 
 export const EDUCATION: Education = {

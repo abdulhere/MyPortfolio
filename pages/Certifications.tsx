@@ -1,12 +1,39 @@
 import React from 'react';
-import { CERTIFICATIONS, EDUCATION } from '../constants';
-import { Award, GraduationCap, CheckCircle } from 'lucide-react';
+import { CERTIFICATIONS, EDUCATION, MYAWARDS } from '../constants';
+import { Award, GraduationCap, CheckCircle, Star} from 'lucide-react';
 
 const Certifications: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50 py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
+       {/* Awards Section */}
+        <div className="mb-20">
+          <div className="flex items-center gap-4 mb-8">
+             <div className="p-3 bg-primary-100 rounded-full text-primary-600">
+                <Star className="w-8 h-8" />
+             </div>
+             <div>
+               <h2 className="text-3xl font-display font-bold text-slate-900">Core Highlights</h2>
+               <p className="text-slate-500">Professional achievements and awards</p>
+             </div>
+          </div>
+          
+          <div className="grid gap-4">
+            {MYAWARDS.map((cert, idx) => (
+              <div 
+                key={idx}
+                className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex items-start transition-transform hover:scale-[1.01]"
+              >
+                <CheckCircle className="w-6 h-6 text-green-500 mt-0.5 mr-4 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900">{cert.name}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Certifications Section */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">

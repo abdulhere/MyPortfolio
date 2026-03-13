@@ -21,6 +21,10 @@ export interface Certification {
   year?: string;
 }
 
+export interface MyAward {
+  name: string;
+}
+
 export interface Education {
   degree: string;
   institution: string;
