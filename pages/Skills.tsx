@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
           <h2 className="text-base font-semibold text-primary-600 tracking-wide uppercase">Technical Expertise</h2>
           <h3 className="mt-2 text-3xl font-display font-extrabold text-slate-900 sm:text-4xl">Tools & Technologies</h3>
           <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-500">
-            A comprehensive toolkit built over 4+ years of solving complex QA challenges, now enhanced with GenAI capabilities.
+            A comprehensive toolkit built over 5+ years of solving complex QA challenges, now enhanced with GenAI capabilities.
           </p>
         </div>
 
